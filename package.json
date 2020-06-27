@@ -1,6 +1,6 @@
 {
   "name": "ember-leaflet-gesture-handling",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Use leaflet.gestureHandling in Ember with ember-leaflet.",
   "keywords": [
     "ember-addon",
