@@ -1,16 +1,11 @@
 ember-leaflet-gesture-handling
 ==============================================================================
 
-[Short description of the addon.]
+This addon extends [leaflet-gesture-handling](https://github.com/elmarquis/Leaflet.GestureHandling) 
+and is a plugin for [ember-leaflet](https://github.com/miguelcobain/ember-leaflet).
 
-
-Compatibility
-------------------------------------------------------------------------------
-
-* Ember.js v3.12 or above
-* Ember CLI v2.13 or above
-* Node.js v10 or above
-
+Brings the basic functionality of Google Maps Gesture Handling into Leaflet. 
+Prevents users from getting trapped on the map when scrolling a long page.
 
 Installation
 ------------------------------------------------------------------------------
