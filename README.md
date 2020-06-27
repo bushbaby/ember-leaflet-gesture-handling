@@ -18,8 +18,22 @@ ember install ember-leaflet-gesture-handling
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+It will be enabled by default after installation.
 
+Disbaling or reconfiguration can be done it in your application configuration
+in config/environment.js:
+
+```json
+ENV['leafletGestureHandling'] = {
+  enabled: true,
+  text: {
+    touch: "two fingers to move the map",
+    scroll: "ctrl + scroll to zoom the map",
+    scrollMac: "\u2318 + scroll to zoom the map"
+  },
+  duration: 1000,
+}
+```
 
 Contributing
 ------------------------------------------------------------------------------

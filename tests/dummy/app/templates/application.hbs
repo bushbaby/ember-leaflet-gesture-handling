@@ -1,3 +1,14 @@
-<h2 id="title">Welcome to Ember</h2>
+<section>
+  <h2 id="title">Welcome to Ember</h2>
+</section>
 
+<section>
+  <LeafletMap @lat={{52.362}} @lng={{4.86325}} @zoom={{13}} @gestureHandling={{true}} as |layers|>
+    <layers.tile @url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"/>
+  </LeafletMap>
+</section>
+
+<section>
+  <p>after the map</p>
+</section>
 {{outlet}}

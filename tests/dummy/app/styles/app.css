@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.leaflet-container {
+  width:100vw;
+  height:100vh;
+}
+
+section {
+  width:100vw;
+  min-height:50vh;
+}
