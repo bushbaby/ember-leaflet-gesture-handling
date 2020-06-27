@@ -6,9 +6,10 @@
     "ember-addon",
     "ember-leaflet"
   ],
-  "repository": "",
+  "repository": "https://github.com/bushbaby/ember-leaflet-gesture-handling",
+  "homepage": "https://github.com/bushbaby/ember-leaflet-gesture-handling",
   "license": "MIT",
-  "author": "",
+  "author": "Bas Kamer",
   "directories": {
     "doc": "doc",
     "test": "tests"
