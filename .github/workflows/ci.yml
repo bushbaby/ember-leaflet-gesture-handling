@@ -23,12 +23,12 @@ jobs:
 
       - name: Lint JavaScript
         run: |
-          lint:js
+          yarn lint:js
 
       - name: Lint Handlebars
         run: |
-          lint:hbs
+          yarn lint:hbs
 
       - name: Run Tests
         run: |
-          test:ember-compatibility
+          yarn test:ember-compatibility
