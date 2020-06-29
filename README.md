@@ -1,6 +1,8 @@
 ember-leaflet-gesture-handling
 ==============================================================================
 
+![CI Status](https://github.com/bushbaby/ember-leaflet-gesture-handling/workflows/.github/workflows/ci.yml/badge.svg)
+
 This addon extends [leaflet-gesture-handling](https://github.com/elmarquis/Leaflet.GestureHandling) 
 and is a plugin for [ember-leaflet](https://github.com/miguelcobain/ember-leaflet).
 
