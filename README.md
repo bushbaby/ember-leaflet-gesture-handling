@@ -20,8 +20,8 @@ Usage
 
 It will be enabled by default after installation.
 
-Disbaling or reconfiguration can be done it in your application configuration
-in config/environment.js:
+Disabling or further reconfiguration can be done via the application 
+configuration (config/environment.js).
 
 ```json
 ENV['leafletGestureHandling'] = {

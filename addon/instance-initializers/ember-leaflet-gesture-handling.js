@@ -1,27 +1,27 @@
-/* global L */
 import { GestureHandling } from "leaflet-gesture-handling";
 
-const leaf = typeof L === 'undefined' ? {} : L;
-
 export function initialize(appInstance) {
+  const leaf = typeof window.L === 'undefined' ? {} : window.L;
+
   const config = appInstance.resolveRegistration('config:environment');
   const gestureHandlingConfig = Object.assign({}, config.ENV.leafletGestureHandling || { enabled: true });
 
+  if (gestureHandlingConfig.enabled === undefined) {
+    gestureHandlingConfig.enabled = true;
+  }
+
   if (gestureHandlingConfig.enabled) {
-    const options = {};
+    const options = {gestureHandling: true};
 
     if (!isNaN(parseInt(gestureHandlingConfig.duration))) {
-      options.duration = gestureHandlingConfig.duration;
+      options.gestureHandlingOptions = {duration : gestureHandlingConfig.duration};
     }
 
     if (gestureHandlingConfig.text) {
-      options.text = gestureHandlingConfig.text;
+      options.gestureHandlingOptions = Object.assign({text : gestureHandlingConfig.text}, options.gestureHandlingOptions)
     }
 
-    leaf.Map.mergeOptions({
-      gestureHandling: true,
-      gestureHandlingOptions: options
-    });
+    leaf.Map.mergeOptions(options);
 
     leaf.Map.addInitHook("addHandler", "gestureHandling", GestureHandling);
   }
